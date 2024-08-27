@@ -1,0 +1,25 @@
+<PreSplashScreen>:
+
+    MDFloatLayout:
+
+        Image:
+            source: "assets/logo.png"
+            pos_hint: {"center_x": 0.5, "center_y": 0.6}
+
+        MDProgressBar:
+            id: loadingProgress
+            type: "determinate"
+            size_hint: None, None
+            height: "2dp"
+            width: "200dp"
+            pos_hint: {"center_x": 0.5, "center_y": 0.2}
+            value: 0
+            opacity: 0
+
+        MDLabel:
+            id: loadingText
+            text: "Chargement"
+            opacity: 0
+            halign: "center"
+            font_size: "10dp"
+            pos_hint: {"center_x": 0.5, "center_y": 0.17}

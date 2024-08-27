@@ -1,0 +1,28 @@
+
+<MagicButton@MagicBehavior+MDRaisedButton>:
+
+<EndGameScreen>:
+
+    MDFloatLayout:
+        orientation: "vertical"
+
+        MDLabel:
+            id: end_text
+            text: "Félicitations ! Vous avez terminé le jeu !"
+            halign: "center"
+            pos_hint: {"center_x": 0.5, "center_y": 0.6}
+
+        MDIcon:
+            id: reward_icon
+            icon: "trophy"
+            font_size: "100dp"
+            theme_text_color: "Custom"
+            text_color: "gold"
+            pos_hint: {"center_x": 0.5, "center_y": 0.4}
+
+        MagicButton:
+            text: "Accueil"
+            size_hint: .4, None
+            pos_hint: {"center_x":.5, "center_y":.2}
+            on_release: root.go_to_home(self)
+            on_press: self.grow()

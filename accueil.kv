@@ -1,0 +1,38 @@
+
+<MagicButton@MagicBehavior+MDRaisedButton>:
+
+<AccueilScreen>:
+
+    MDBoxLayout:
+        orientation: "vertical"
+
+        MDBoxLayout:
+            orientation: "vertical"
+
+            MDWidget:
+                size_hint_y: None
+                height: "100dp"
+
+            MDLabel:
+                id: jedemo_label
+                text: "Jedemo"
+                halign: "center"
+                font_size: "50"
+
+        MDBoxLayout:
+            orientation: "vertical"
+            spacing: "20dp"
+
+            MagicButton:
+                text: "Jouer"
+                size_hint: .4, None
+                pos_hint: {"center_x":.5}
+                on_release: root.go_to_game(self)
+                on_press: self.grow()
+
+            MDWidget:
+                size_hint_y: None
+                height: "150dp"
+
+
+

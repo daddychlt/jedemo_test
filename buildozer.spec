@@ -1,19 +1,19 @@
 [app]
 
 # (str) Title of your application
-title = My Application
+title = Jedemo
 
 # (str) Package name
-package.name = myapp
+package.name = jedemo
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.test
+package.domain = org.jedemo
 
 # (str) Source code where the main.py live
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts = py,png,jpg,kv,atlas
+source.include_exts = py,png,jpg,kv,atlas,json
 
 # (list) List of inclusions using pattern matching
 #source.include_patterns = assets/*,images/*.png
@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,kivymd==1.2.0,pillow
+requirements = python3,kivy,kivymd==1.2.0,nltk==3.9.1,pillow
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
